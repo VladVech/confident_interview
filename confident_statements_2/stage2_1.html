@@ -1,18 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confident Statements II Stage 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f8f8; padding: 60px; }
+    .container { display: flex; flex-direction: column; align-items: center; }
+    .card {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  margin: 30px 0;
+  perspective: 1000px;
+}
+    .inner-card {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+      transform-origin: 52.5% center;
+    }
+    .card.flipped .inner-card {
+      transform: rotateY(180deg);
+    }
+    .front, .back {
+      background: #e0f7fa;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      padding: 20px;
+      top: 0;
+      left: 0;
+    }
+    .back {
+      background: #e0f7fa;
+      transform: rotateY(180deg);
+    }
+    .term {
+      font-weight: bold;
+      font-size: 2em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .meaning {
+      color: #16a085;
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+    }
+    .translation {
+      color: #e74606;
+      font-weight: bold;
+      font-size: 2em;
+      text-align: center;
+    }
+    .explanation {
+      color: #7f8c8d;
+      font-size: 2em;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .speaker {
+      font-size: 32px; color: #2980b9;
+      margin-top: 0px;
+      font-size: 76px;
+      color: #3498db;
+      cursor: pointer;
+    }
+   .centered-buttons {
+      text-align: center;
+      margin-top: 40px;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+    .nav-buttons {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .orange-button {
+  background-color: #ff6b00;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.orange-button {
+  background-color: #ff6b00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 48%;
+  font-size: 1.2em;
+  padding: 20px 0;
+}
+.orange-button:hover {
+  background-color: #e65c00;
+}
+  </style>
+</head>
+<body>
+<div class="nav-buttons" style="display: flex; justify-content: center; gap: 12px; margin-top: 20px;">
+  <a href="../index.html" class="orange-button">Back</a>
+  <a href="../../../index.html" class="orange-button">Home</a>
+</div>
+  <h1 style="text-align:center; font-size: 36px; color: #2233c9;">Confident Statements II Stage 1</h1>
+<h1 style="text-align:center; font-size: 36px; color: #c95722;">Confident Statements II Stage 1</h1>
+
+<div class="container">
+
+
+
 
 <!-- Card 21 -->
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I believe in lifelong learning</div>
+      <div class="term">I stay aware of industry trends</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio20').play();">&#128264;</div>
       <audio id="audio20">
         <source src="sounds/21_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Always learning</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я верю в обучение на протяжении всей жизни</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -21,16 +161,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I bring positive energy to the workplace</div>
+      <div class="term">I’m comfortable stepping out of my comfort zone</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio21').play();">&#128264;</div>
       <audio id="audio21">
         <source src="sounds/22_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Brings positive energy</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я приношу позитивную энергию в рабочую среду</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -39,16 +179,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I welcome constructive criticism</div>
+      <div class="term">I take time to understand the client's perspective</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio22').play();">&#128264;</div>
       <audio id="audio22">
         <source src="sounds/23_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Accepts critique constructively</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я приветствую конструктивную критику</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -57,16 +197,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I’m goal-driven and focused</div>
+      <div class="term">I build trust through transparency</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio23').play();">&#128264;</div>
       <audio id="audio23">
         <source src="sounds/24_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Goal-focused mindset</div>
+      <div class="meaning">Builds trust</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я целеустремлён и сосредоточен</div>
+      <div class="translation"><strong>-</strong> Я строю доверие через открытость</div>
     </div>
   </div>
 </div>
@@ -75,16 +215,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I speak with clarity and confidence</div>
+      <div class="term">I stay productive with minimal supervision</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio24').play();">&#128264;</div>
       <audio id="audio24">
         <source src="sounds/25_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Speaks clearly and confidently</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я говорю чётко и уверенно</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -93,16 +233,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I handle criticism professionally</div>
+      <div class="term">I’m committed to exceeding expectations</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio25').play();">&#128264;</div>
       <audio id="audio25">
         <source src="sounds/26_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Accepts critique constructively</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я профессионально воспринимаю критику</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -111,16 +251,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I demonstrate reliability and consistency</div>
+      <div class="term">I approach tasks with a growth mindset</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio26').play();">&#128264;</div>
       <audio id="audio26">
         <source src="sounds/27_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Reliable and consistent</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я демонстрирую надёжность и последовательность</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -129,16 +269,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I support and uplift my teammates</div>
+      <div class="term">I support diversity and inclusion</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio27').play();">&#128264;</div>
       <audio id="audio27">
         <source src="sounds/28_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Supports the team</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я поддерживаю и вдохновляю свою команду</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -147,16 +287,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I’m committed to excellence</div>
+      <div class="term">I challenge myself to improve daily</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio28').play();">&#128264;</div>
       <audio id="audio28">
         <source src="sounds/29_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Strives for excellence</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я стремлюсь к совершенству</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -165,16 +305,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I solve problems efficiently</div>
+      <div class="term">I maintain a strong work ethic</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio29').play();">&#128264;</div>
       <audio id="audio29">
         <source src="sounds/30_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Solves problems efficiently</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я эффективно решаю проблемы</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -183,16 +323,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I maintain professionalism at all times</div>
+      <div class="term">I’m flexible when priorities change</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio30').play();">&#128264;</div>
       <audio id="audio30">
         <source src="sounds/31_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Maintains professionalism</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я сохраняю профессионализм в любой ситуации</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -201,16 +341,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I stay motivated and self-disciplined</div>
+      <div class="term">I bring resilience to the workplace</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio31').play();">&#128264;</div>
       <audio id="audio31">
         <source src="sounds/32_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Self-motivated</div>
+      <div class="meaning">Brings resilience to work</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я мотивирован и дисциплинирован</div>
+      <div class="translation"><strong>-</strong> Я сохраняю устойчивость на работе</div>
     </div>
   </div>
 </div>
@@ -219,16 +359,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I take time to understand the bigger picture</div>
+      <div class="term">I stay mindful of the big picture</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio32').play();">&#128264;</div>
       <audio id="audio32">
         <source src="sounds/33_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Sees the big picture</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я стараюсь понять общую картину</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -237,16 +377,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I approach challenges with optimism</div>
+      <div class="term">I give and receive feedback professionally</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio33').play();">&#128264;</div>
       <audio id="audio33">
         <source src="sounds/34_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Approaches with optimism</div>
+      <div class="meaning">Gives and receives feedback</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я с оптимизмом принимаю вызовы</div>
+      <div class="translation"><strong>-</strong> Я профессионально даю и получаю обратную связь</div>
     </div>
   </div>
 </div>
@@ -255,16 +395,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I strive for mutual success</div>
+      <div class="term">I use setbacks as learning opportunities</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio34').play();">&#128264;</div>
       <audio id="audio34">
         <source src="sounds/35_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Seeks mutual success</div>
+      <div class="meaning">Open to learning</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я стремлюсь к взаимному успеху</div>
+      <div class="translation"><strong>-</strong> Я открыт к обучению</div>
     </div>
   </div>
 </div>
@@ -273,16 +413,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I take calculated risks when necessary</div>
+      <div class="term">I believe in collaboration over competition</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio35').play();">&#128264;</div>
       <audio id="audio35">
         <source src="sounds/36_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Takes smart risks</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я иду на обоснованный риск, когда это необходимо</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -291,16 +431,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I embrace change and innovation</div>
+      <div class="term">I take pride in clear and honest communication</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio36').play();">&#128264;</div>
       <audio id="audio36">
         <source src="sounds/37_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Embraces innovation</div>
+      <div class="meaning">Communicates clearly</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я принимаю изменения и инновации</div>
+      <div class="translation"><strong>-</strong> Я ценю честную коммуникацию</div>
     </div>
   </div>
 </div>
@@ -309,16 +449,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I prioritize tasks effectively</div>
+      <div class="term">I’m known for being dependable and thorough</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio37').play();">&#128264;</div>
       <audio id="audio37">
         <source src="sounds/38_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Prioritizes tasks well</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я эффективно расставляю приоритеты</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
@@ -327,16 +467,16 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I prepare thoroughly for every task</div>
+      <div class="term">I consistently meet and exceed goals</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio38').play();">&#128264;</div>
       <audio id="audio38">
         <source src="sounds/39_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Prepares thoroughly</div>
+      <div class="meaning">Aligns with company goals</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Я тщательно подготавливаюсь к каждой задаче</div>
+      <div class="translation"><strong>-</strong> Я поддерживаю цели компании</div>
     </div>
   </div>
 </div>
@@ -345,16 +485,31 @@
 <div class="card" onclick="this.classList.toggle('flipped')">
   <div class="inner-card">
     <div class="front">
-      <div class="term">I’m driven by results, not routine</div>
+      <div class="term">I take ownership of my development</div>
       <div class="speaker" onclick="event.stopPropagation(); document.getElementById('audio39').play();">&#128264;</div>
       <audio id="audio39">
         <source src="sounds/40_Chapter 1.mp3" type="audio/mpeg">
       </audio>
     </div>
     <div class="back">
-      <div class="meaning">Driven by outcomes</div>
+      <div class="meaning">Strong professional attitude</div>
       <div class="explanation">Use this phrase to present yourself as competent, reliable, and proactive.</div>
-      <div class="translation"><strong>-</strong> Мной движет результат, а не рутина</div>
+      <div class="translation"><strong>-</strong> Я уверен в своих силах и действиях</div>
     </div>
   </div>
 </div>
+
+
+
+
+ 
+
+<script>
+
+  document.querySelectorAll("audio").forEach(audio => {
+    audio.playbackRate = 0.95;
+  });
+</script>
+
+</body>
+</html>
